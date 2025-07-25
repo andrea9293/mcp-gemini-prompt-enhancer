@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/compare/v1.1.0...v1.2.0) (2025-07-25)
+
+
+### Features
+
+* important fix on package depencies ([de320b1](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/commit/de320b1bccfebccd969464a4991348f4915aad87))
+
 # [1.1.0](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/compare/v1.0.1...v1.1.0) (2025-07-25)
 
 
