@@ -1,0 +1,37 @@
+{
+  "name": "mcp-gemini-prompt-enhancer",
+  "module": "src/index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server that provides a prompt optimization service for Large Language Models (LLMs) using Google Gemini, with advanced prompt engineering thanks to 22365_3_Prompt_Engineering_v7.pdf authored by Lee Boonstra",
+  "private": true,
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc && shx chmod +x dist/*.js",
+    "build:http": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start:http": "tsx src/server/http-server.ts",
+    "dev:http": "tsx watch src/server/http-server.ts"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.11.0",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@valibot/to-json-schema": "^1.0.0",
+    "effect": "^3.14.4",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@google/genai": "^1.11.0",
+    "cors": "^2.8.5",
+    "fastmcp": "^1.21.0",
+    "mime": "^4.0.7",
+    "dotenv": "^16.5.0",
+    "zod": "^3.24.2"
+  }
+}

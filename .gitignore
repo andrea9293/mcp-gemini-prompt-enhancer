@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# TypeScript output
+*.js
+*.js.map
+*.d.ts
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Editor folders
+.vscode/
+
+# Dependency lock files
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+/.cursor/
+
+# Optional: coverage and test output
+coverage/
+
+# Optional: npm debug files
+npm-debug.log*
+
+# Optional: bun cache
+.bun/
