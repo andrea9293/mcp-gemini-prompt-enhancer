@@ -1,5 +1,9 @@
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/andrea.bravaccino)
 
-# mcp-gemini-prompt-enhancer
+[![npm version](https://badge.fury.io/js/@andrea9293%2Fmcp-gemini-prompt-enhancer.svg)](https://badge.fury.io/js/@andrea9293%2Fmcp-gemini-prompt-enhancer) 
+
+
+# MCP Gemini Prompt Enhancer
 
 A Model Context Protocol (MCP) server that provides a prompt optimization service for Large Language Models (LLMs) using Google Gemini, with advanced prompt engineering support and automatic PDF asset management.
 
@@ -8,11 +12,33 @@ The service uses as its main asset the PDF “22365_3_Prompt_Engineering_v7”, 
 
 Direct download link: [22365_3_Prompt_Engineering_v7.pdf](https://www.innopreneur.io/wp-content/uploads/2025/04/22365_3_Prompt-Engineering_v7-1.pdf)
 
+
+## Configure MCP Client
+Add to your MCP client configuration (e.g., Claude Desktop):
+
+```json
+{
+  "servers": {
+    "mcp-gemini-prompt-enhancer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@andrea9293/mcp-gemini-prompt-enhancer"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY"
+      },
+      "type": "stdio"
+    }
+  }
+}
+```
+
 ## Main Features
 - API to enhance textual prompts using prompt engineering techniques
 - Automatic download and management of reference PDF asset
 - Cross-platform compatibility (Windows, macOS, Linux)
-- FastMCP server with stdio and SSE transports
+- FastMCP server with stdio and SSE transports (sse only for development)
 
 ## Project Structure
 ```
@@ -62,6 +88,6 @@ Direct download link: [22365_3_Prompt_Engineering_v7.pdf](https://www.innopreneu
 - [zod](https://www.npmjs.com/package/zod)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 
-## Notes
-- The project is designed to be extensible and integrable into MCP workflows.
-- For questions or contributions, open an issue or contact the maintainer.
+## License
+
+MIT - see [LICENSE](LICENSE) file
