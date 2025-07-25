@@ -1,7 +1,8 @@
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/andrea.bravaccino)
-
 [![npm version](https://badge.fury.io/js/@andrea9293%2Fmcp-gemini-prompt-enhancer.svg)](https://badge.fury.io/js/@andrea9293%2Fmcp-gemini-prompt-enhancer) 
 
+[![Donate with PayPal](https://i.ibb.co/SX4qQBfm/paypal-donate-button171.png)](https://www.paypal.com/donate/?hosted_button_id=HXATGECV8HUJN) 
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/andrea.bravaccino)
 
 # MCP Gemini Prompt Enhancer
 
