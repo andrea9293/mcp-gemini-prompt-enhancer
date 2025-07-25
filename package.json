@@ -1,5 +1,5 @@
 {
-  "name": "mcp-gemini-prompt-enhancer",
+  "name": "@andrea9293/mcp-gemini-prompt-enhancer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
