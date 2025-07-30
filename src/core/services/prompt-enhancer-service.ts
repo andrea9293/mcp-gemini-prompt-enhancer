@@ -16,17 +16,17 @@ export class PromptEnhancerService {
 	 * @param prompt The prompt to enhance
 	 * @returns The enhanced prompt
 	 */
-	public static async enhancePrompt(prompt: string): Promise<string> {
-		return await enhancePromptWithGemini(prompt);
+	public static async enhancePrompt(prompt: string, apiKey: string): Promise<string> {
+		return await enhancePromptWithGemini(prompt, apiKey);
 	}
 }
 
-const geminiApiKey = process.env.GEMINI_API_KEY;
-const ai = new GoogleGenAI({
-	apiKey: geminiApiKey,
-});
+async function enhancePromptWithGemini(prompt: string, apiKey: string): Promise<string> {
+	const geminiApiKey = process.env.GEMINI_API_KEY || apiKey;
+	const ai = new GoogleGenAI({
+		apiKey: geminiApiKey,
+	});
 
-async function enhancePromptWithGemini(prompt: string): Promise<string> {
 	let listOfFiles = [];
 	const listResponse = await ai.files.list({ config: { pageSize: 10 } });
 	for await (const file of listResponse) {

@@ -1,13 +1,13 @@
-import startServer from "./server.js";
+import { startRemoteServer } from "./server.js";
 
 // Environment variables with default values
-const PORT = parseInt(process.env.PORT || "3001", 10);
+const PORT = parseInt(process.env.PORT || "3002", 10);
 
 async function main() {
   try {
     // Create and initialize the FastMCP server
-    const server = await startServer();
-    
+    const server = await startRemoteServer();
+
     // Start the server with SSE transport
     server.start({
       transportType: "sse",
