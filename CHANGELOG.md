@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/compare/v1.3.0...v1.4.0) (2025-07-31)
+
+
+### Features
+
+* add Dockerfile version; enhance tools registration with API key support in querystring ([710c057](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/commit/710c05774ef3319a14a2ae3a9a2602d486f87169))
+* enhance prompt service to accept API key and add remote server functionality ([5a24688](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/commit/5a2468871cd7d670dd543bf361c095075e98328b))
+
 # [1.3.0](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/compare/v1.2.0...v1.3.0) (2025-07-25)
 
 
