@@ -21,15 +21,16 @@ export function registerTools(server: FastMCP) {
   });
 }
 
-export function registerRemoteTools(server: FastMCP) {
+export function registerRemoteTools(server: FastMCP<{ geminiApiKey: string }>) {
   server.addTool({
     name: "enhance_prompt",
     description: "A tool to enhance prompts",
     parameters: z.object({
       prompt: z.string().describe("The prompt to enhance")
     }),
-    execute: async (params, { session }) => {
-      const enhanced = await services.PromptEnhancerService.enhancePrompt(params.prompt, session && session.geminiApiKey ? session.geminiApiKey : "");
+    execute: async (params, context: { session?: { geminiApiKey?: string } }) => {
+      const apiKey = context.session && context.session.geminiApiKey ? context.session.geminiApiKey : "";
+      const enhanced = await services.PromptEnhancerService.enhancePrompt(params.prompt, apiKey);
       return enhanced;
     }
   });

@@ -32,9 +32,9 @@ async function startRemoteServer() {
     const server = new FastMCP({
       name: "MCP Prompt Enhancer",
       version: "1.0.0",
-      authenticate: (request) => {
+      authenticate: async (request) => {
         const urlParams = new URL("http://dummy" + request.url);
-        const apiKey =  urlParams.searchParams.get("apiKey");
+        const apiKey = urlParams.searchParams.get("apiKey");
 
         console.error("Received Gemini API Key:", apiKey);
         if (!apiKey) {

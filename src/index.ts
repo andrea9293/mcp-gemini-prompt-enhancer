@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { FastMCP } from "fastmcp";
-import startServer from "./server/server.js";
+import { startServer } from "./server/server.js";
 
 // Start the server
 async function main() {
