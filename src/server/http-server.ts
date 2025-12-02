@@ -8,10 +8,10 @@ async function main() {
     // Create and initialize the FastMCP server
     const server = await startRemoteServer();
 
-    // Start the server with SSE transport
+    // Start the server with HTTP stream transport (SSE endpoint)
     server.start({
-      transportType: "sse",
-      sse: {
+      transportType: "httpStream",
+      httpStream: {
         port: PORT,
         endpoint: "/sse",
       },
