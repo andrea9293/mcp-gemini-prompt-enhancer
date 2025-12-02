@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/compare/v1.4.0...v1.4.1) (2025-12-02)
+
+
+### Bug Fixes
+
+* upgrade fastmcp to v3.24.0 ([dc9f0a7](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/commit/dc9f0a72e67818c6442da6b47508bfd321836716))
+
 # [1.4.0](https://github.com/andrea9293/mcp-gemini-prompt-enhancer/compare/v1.3.0...v1.4.0) (2025-07-31)
 
 
